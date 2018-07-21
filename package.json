@@ -1,0 +1,24 @@
+{
+  "name": "atividade-pratica",
+  "version": "1.0.0",
+  "description": "Atividade prática desenvolvida para a trilha de conhecimento da SysMap",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "istanbul cover --reporter=html ./node_modules/mocha/bin/_mocha -- -R spec --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorDaynno/Atividade-pr-tica-trilha.git"
+  },
+  "author": "Vítor Daynno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorDaynno/Atividade-pr-tica-trilha/issues"
+  },
+  "homepage": "https://github.com/VitorDaynno/Atividade-pr-tica-trilha#readme",
+  "devDependencies": {
+    "istanbul": "0.4.5",
+    "mocha": "^5.2.0"
+  }
+}
