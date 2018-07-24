@@ -1,3 +1,5 @@
+var Number = require('../../src/calc/Number.js');
+
 describe('Number', function(){
 
     var number = new Number();
