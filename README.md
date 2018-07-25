@@ -13,3 +13,17 @@ Para rodar os testes:
 ````
     npm test
 ````
+
+Para rodar a aplicação:
+
+* Instale as dependências. 
+
+````
+    npm install --production
+````
+
+* Execute o comando.
+
+````
+    npm start
+````

@@ -51,6 +51,17 @@ describe('calculations', function(){
                        expect(res.body.total).to.be.equal(41);
                     });
             });
+
+            it('Should return 41 as a response', function(){
+                return request(server)
+                    .post('/v1/calculations/sum')
+                    .send({
+                        values: [5.5, 5, 33]
+                    })
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .expect(409);
+            });
         });
 
         describe('Calculate average', function(){
@@ -77,7 +88,7 @@ describe('calculations', function(){
 
             it('Should return 164.75 as a response', function(){
                 return request(server)
-                    .post('/v1/calculations/sum')
+                    .post('/v1/calculations/average')
                     .send({
                         values: [54, 515, 85, 5]
                     })
@@ -87,6 +98,17 @@ describe('calculations', function(){
                     .then(function(res){
                        expect(res.body.total).to.be.equal(164.75);
                     });
+            });
+
+            it('Should return 164.75 as a response', function(){
+                return request(server)
+                    .post('/v1/calculations/average')
+                    .send({
+                        values: [7.8, 8, 41, 5]
+                    })
+                    .set('Accept', 'application/json')
+                    .expect('Content-Type', /json/)
+                    .expect(409);
             });
         });
     });

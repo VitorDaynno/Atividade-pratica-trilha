@@ -1,3 +1,5 @@
+var chai    = require('chai');
+var expect  = chai.expect;
 var Numbers = require('../../src/calc/Numbers.js');
 
 describe('Numbers', function(){
@@ -55,7 +57,7 @@ describe('Numbers', function(){
         });
 
         it('Calculate with float numbers', function(){
-            return number.divide([20,5.2])
+            return numbers.average([20,5.2])
                 .then()
                 .catch(function(error){
                     expect(error).to.be.equal('Only integer numbers is permitted');

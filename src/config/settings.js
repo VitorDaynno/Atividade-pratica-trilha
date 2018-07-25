@@ -1,3 +1,3 @@
 module.exports = {
-    servicePort: process.env.PORT || 3000
+    servicePort: process.env.PORT || 5000
 };

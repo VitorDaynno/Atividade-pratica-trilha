@@ -3,4 +3,6 @@ module.exports = function(app) {
 
     app.route('/v1/calculations/sum')
         .post(controller.sum);
+    app.route('/v1/calculations/average')
+        .post(controller.average);
 };
