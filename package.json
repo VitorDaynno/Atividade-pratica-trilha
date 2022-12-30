@@ -19,7 +19,7 @@
   "homepage": "https://github.com/VitorDaynno/Atividade-pr-tica-trilha#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "supertest": "^3.4.2"
   },
   "dependencies": {
